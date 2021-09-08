@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Samuel Miller web site</title>
+    <link rel="stylesheet" type="text/css" href="https://n-a-r-d.tk/iit_files/test/examples/style.css">
+    <style>
+    body{
+        background:#dbfeff;
+    }
+    [class*="col-"] {
+  float: right;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    .play{
+        padding: 10px;
+    }
+    @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-3 {width: 40%;}
+  .col-6 {width: 20%;}
+}
+@media screen and (max-width: 800px) {
+  .col-6 {width: 50%;}
+  .manu{float:left}
+
+}
+.manu{
+    font-size: 20px;
+    padding: 7px;
+    color:#363636;background:#949494;
+    margin: 7px;
+    list-style: none;
+}
+.manu:hover {
+  background: orange;
+}
+a:link {
+  color: #363636;
+}
+a:visited {
+  color: #363636;
+}
+
+    </style>
+</head>
+<body><center>
+<marquee behavior="scroll" direction="left" scrollamount="10"><font style="color:red;font-Size:20px;"> ╭∩╮（︶_︶）╭∩╮</font></marquee>
+    <h1 style="color:red;font-Size:50px;"> welcome to  Samuel Miller web site</h1>
+    <marquee behavior="scroll" direction="right" scrollamount="10"><font style="color:red;font-Size:20px;"> ╭∩╮（︶_︶）╭∩╮</font></marquee>
+    <hr>
+          <font style="font-Size:40px;">Click the buttun to play👉</font><button id="myBtn" class="play"onclick="myFunction()">Play</button><font style="color:red;font-Size:40px;">👈</font>
+
+<br>
+<br>
+    <video id="myVideo" style="display:none;" src="videoplayback.mp4" controls></video>
+    
+<div class="row">
+    
+    <div class="col-6"><ul><li class="manu"><a href="#about">about me</a></li><li class="manu"><a href="https://www.youtube.com/c/SamMillerVlogs">youtube</a></li></ul></div>
+            <div class="col-6" style="display:none;background:#f5d3d3;" id="myDIV">
+      <h3 style="color:#f02b2b;background:#faa0a0;padding:15px;"> lol u got prancked </h3>
+      <p>lol u throught that this buttom will <font style="color:red;font-Size:25px;">Rick Rolled</font> u lol</p>
+
+
+            <p>now <font style="color:#696969;font-Size:20px;">scroll down </font> u piece of shit </p>
+                  <p><font style="font-Size:20px;color:orange;">this is ACSII generated video</font></p>
+
+    </div>
+    <canvas id="video-scene"></canvas>
+
+    </center>
+    
+</div>
+    <script type="text/javascript" src="aalib.js"></script>
+    <script type="text/javascript">
+        aalib.read.video.fromVideoElement(document.querySelector("video"))
+            .map(aalib.aa({ width: 165, height: 108,colored: true }))
+            .map(aalib.render.canvas({
+                width: 696,
+                height: 676,
+                el: document.querySelector("#video-scene"),
+                fontSize:16,
+fontFamily: "Ubuntu Mono, monospace"                
+            }))
+
+            .subscribe();
+    </script>
+    <button id="myButton" class="float-left submit-button" >i dont know why is this here man i dont care </button>
+< ---  <font style="color:red;font-Size:20px;">fuck u 🖕 ╭∩╮（︶_︶）╭∩╮</font>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+    var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "ok what be secius.html";
+    };
+</script> 
+
+
+
+<div class="row">
+    <div class="col-6">
+      <h3>i dont know 🤷</h3>
+      <p>i really dont know what to add here lol...</p>
+      <p>but but i do i care lol...</p>
+    </div>
+    <div class="col-3">
+<h2 id="about">About Me</h2>
+      <p>Samuel Miller i am profesinal nood-programmer ...</p>
+      <div class="github-card" data-github="samuelmarina" data-width="400" data-height="" data-theme="default"></div>
+      <p>I famous for SHITING 💩 on WHITE-HAT-Jr </p>
+      <p>projects :- <div class="github-card" data-github="samuelmarina/is-even" data-width="400" data-height="" data-theme="default"></div>
+      <div class="github-card" data-github="samuelmarina/is-odd" data-width="400" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+
+
+</p>
+      <p>Samuel Miller  <a href="https://www.youtube.com/c/SamMillerVlogs">youtube</a></p>
+      <p>i love u <font style=" color:bule; background:skyblue;font-size:20px; padding:4px;">Samuel Miller</font> </p>
+    </div>
+  </div>
+  <footer>
+    <div style="float:right; font-size:10px; padding:4px;">
+        <ul style="  list-style: none;">
+            <li>made by :- "<a href="https://git.io/freejooo">freejooo</a>"|made for:- "
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Samuel Miller</a>"</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
+
+

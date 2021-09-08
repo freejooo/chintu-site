@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>aalib.js :: Marylin</title>
+    <link rel="stylesheet" type="text/css" href="https://n-a-r-d.tk/iit_files/test/examples/style.css">
+</head>
+<body class="inverse">
+    <script type="text/javascript" src="aalib.js"></script>
+    <script type="text/javascript">
+        aalib.read.image.fromURL("https://c.tenor.com/lBK-Zii3--IAAAAM/rickroll.gif")
+            .map(aalib.aa({ width: 330, height: 80, colored: true }))
+            .map(aalib.filter.inverse())
+            .map(aalib.render.html({ background: "#000", fontFamily: "Ubuntu Mono, monospace" }))
+            .do(function (el) {
+                document.body.appendChild(el);
+            })
+            .subscribe();
+    </script>
+</body>
+</html>
